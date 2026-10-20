@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ficha de Triagem Trabalhista — Filipe Ferreira Advogado OAB/ES 37.159</title>
+<title>Ficha de Triagem Trabalhista | Filipe Ferreira Advogado OAB/ES 37.159</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -56,6 +56,8 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
 .warn{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;margin:0.9rem 0;border-radius:2px}
 .warn p{font-size:11.5px;color:#6b5620;line-height:1.7}
 .warn p strong{color:#1a2235}
+.lgpd{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;border-radius:2px}
+.lgpd p{font-size:11.5px;color:#6b5620;line-height:1.7}
 .wbtn{display:block;width:100%;padding:15px;background:#25D366;border:none;border-radius:2px;color:#fff;font-size:13px;font-weight:600;font-family:"Montserrat",sans-serif;letter-spacing:0.1em;cursor:pointer;text-align:center;text-decoration:none;text-transform:uppercase;transition:opacity 0.15s}
 .wbtn:hover{opacity:0.9}
 .hl{font-size:11px;color:#8a8f9a;text-align:center;margin-top:10px;line-height:1.7}
@@ -95,7 +97,7 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
 <div class="wrap">
   <div class="card">
     <div class="card-intro">
-      <p>Esta ficha organiza as informações do seu caso trabalhista antes da nossa conversa. Preencha com calma, com suas próprias palavras. Ao clicar em enviar, o WhatsApp abrirá automaticamente com suas respostas para o Dr. Filipe. Fotos, PDFs e vídeos não podem ser anexados aqui — sempre que uma pergunta pedir um documento, envie-o separadamente, na mesma conversa, logo depois desta ficha.</p>
+      <p>Esta ficha organiza as informações do seu caso trabalhista antes da nossa conversa. Preencha com calma, com suas próprias palavras. Ao clicar em enviar, o WhatsApp abrirá automaticamente com suas respostas para o Dr. Filipe. Fotos, PDFs e vídeos não podem ser anexados aqui. Sempre que uma pergunta pedir um documento, envie-o separadamente, na mesma conversa, logo depois desta ficha.</p>
     </div>
     <div class="body">
 
@@ -153,7 +155,7 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
           <label class="co"><input type="checkbox" value="Outro assunto, descrito abaixo"><span>Outro assunto, descrito abaixo</span></label>
         </div>
         <div style="margin-top:0.8rem">
-          <label class="lbl">Se marcou "outro", ou quiser detalhar algum item acima, escreva aqui</label>
+          <label class="lbl">Se marcou "outro" ou quiser detalhar algum item acima, escreva aqui</label>
           <input type="text" id="assunto_outro" placeholder="Descreva em poucas palavras">
         </div>
         <div class="er" id="er-assunto">Marque ao menos um assunto para continuar.</div>
@@ -171,7 +173,7 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
       </div>
 
       <div class="sec" style="margin-top:1rem">
-        <label class="lbl">O que mais te preocupa nessa situação, e o que você espera resolver?</label>
+        <label class="lbl">O que mais preocupa você nessa situação e o que espera resolver?</label>
         <textarea id="expectativa" rows="3" placeholder="Ex: tenho medo de não conseguir provar, quero reaver o que não me pagaram..."></textarea>
       </div>
 
@@ -192,7 +194,7 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
         </div>
         <div class="g2" style="margin-top:1rem">
           <div><label class="lbl">Número do processo ou da notificação, se souber</label><input type="text" id="processo_numero"></div>
-          <div><label class="lbl">Vara, órgão, ou quem enviou</label><input type="text" id="processo_orgao"></div>
+          <div><label class="lbl">Vara, órgão ou quem enviou</label><input type="text" id="processo_orgao"></div>
         </div>
       </div>
 
@@ -257,7 +259,7 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
       <div class="sec">
         <div class="tag">Testemunhas</div>
         <label class="lbl">Existem pessoas que podem confirmar os fatos?</label>
-        <span class="hint">Escreva nome, um contato, se possível, e o que cada uma sabe.</span>
+        <span class="hint">Escreva o nome, um contato (se possível) e o que cada uma sabe.</span>
         <textarea id="testemunhas" rows="3" placeholder="Ex: Fulano de tal, telefone tal, viu quando..."></textarea>
       </div>
 
@@ -310,6 +312,17 @@ input:focus,textarea:focus{border-color:#b8963e;background:#fff}
           <label class="lbl">Se sim, qual prova e qual o prazo?</label>
           <input type="text" id="risco_detalhe" placeholder="Ex: câmeras apagam em 15 dias, testemunha vai se mudar...">
         </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Proteção de dados (LGPD)</div>
+        <div class="lgpd">
+          <p>Os dados desta ficha e os documentos enviados serão usados somente para analisar o seu caso e entrar em contato com você. Eles ficam sob sigilo profissional, não são vendidos nem usados para outra finalidade e só passam pelas ferramentas de atendimento do escritório, inclusive as automatizadas. Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo WhatsApp do escritório (Lei 13.709/2018, LGPD).</p>
+        </div>
+        <label class="co" style="margin-top:0.8rem"><input type="checkbox" id="lgpd"><span>Li e autorizo o tratamento dos meus dados, inclusive dados de saúde, quando houver, pelo escritório Filipe Ferreira Advogados &amp; Associados, para as finalidades acima.<span class="req">*</span></span></label>
+        <div class="er" id="er-lgpd">Para enviar a ficha, é preciso autorizar o tratamento dos dados.</div>
       </div>
 
       <div class="div"></div>
@@ -393,12 +406,14 @@ function enviar(){
   else{ document.getElementById("er-assunto").style.display="none"; }
   if(!desc){ document.getElementById("er-desc").style.display="block"; ok=false; }
   else{ document.getElementById("er-desc").style.display="none"; }
+  if(!document.getElementById("lgpd").checked){ document.getElementById("er-lgpd").style.display="block"; ok=false; }
+  else{ document.getElementById("er-lgpd").style.display="none"; }
   if(!ok) return false;
 
   var ug = sc.urg ? sc.urg+"/5" : "Não informado";
 
   var msg = [
-    "*FICHA DE TRIAGEM TRABALHISTA — TRABALHADOR(A)*",
+    "*FICHA DE TRIAGEM TRABALHISTA (TRABALHADOR)*",
     "*Filipe Ferreira Advogados*",
     "",
     "*IDENTIFICAÇÃO*",
@@ -451,7 +466,10 @@ function enviar(){
     "*URGÊNCIA*",
     "Nível: "+ug,
     "Prova em risco: "+gR("risco_prova"),
-    "Detalhe: "+gV("risco_detalhe")
+    "Detalhe: "+gV("risco_detalhe"),
+    "",
+    "*LGPD*",
+    "Autorizou o tratamento dos dados em " + new Date().toLocaleString("pt-BR")
   ];
 
   document.getElementById("wbtn").href = "https://api.whatsapp.com/send?phone=" + WHATSAPP_DESTINO + "&text=" + encodeURIComponent(msg.join("\n"));
