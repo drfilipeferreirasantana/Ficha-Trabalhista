@@ -7,91 +7,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Montserrat",sans-serif;background:#f4f1eb;color:#1a2235;min-height:100vh}
-.hero{background:#1a2235;padding:2.5rem 1rem 4rem;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(184,150,62,0.12)}
+body{font-family:"Montserrat",sans-serif;background:#fffaf5;color:#39414a;min-height:100vh}
+.hero{background:linear-gradient(135deg,#39414a 0%,#6d7c84 100%);padding:2.5rem 1rem 4rem;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(234,234,234,0.14)}
 .hero::after{content:"";position:absolute;bottom:-100px;left:-60px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(200,205,214,0.08)}
-.hero-symbol{margin-bottom:1rem;opacity:1}
-.logo-name{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;color:#fff;letter-spacing:0.16em;text-align:center}
-.gold-line{width:48px;height:1px;background:#b8963e;margin:10px auto}
-.logo-sub{font-size:10px;font-weight:500;color:#d4af6a;letter-spacing:0.22em;text-align:center}
-.logo-oab{font-size:10px;color:#c8cdd6;letter-spacing:0.1em;text-align:center;margin-top:4px}
+.hero-logo{width:300px;max-width:82%;height:auto;display:block}
+.logo-area{font-size:10px;font-weight:500;color:#eaeaea;letter-spacing:0.28em;text-align:center;margin-top:14px;padding-top:10px;border-top:1px solid rgba(234,234,234,0.35)}
 .wrap{max-width:640px;margin:-2.5rem auto 3rem;padding:0 1rem;position:relative;z-index:10}
-.card{background:#fff;border-radius:3px;box-shadow:0 8px 48px rgba(26,34,53,0.13);overflow:hidden}
-.card-intro{background:#1a2235;padding:1.25rem 1.75rem;border-left:3px solid #b8963e}
-.card-intro p{font-size:12px;color:#c8cdd6;line-height:1.85;letter-spacing:0.02em}
+.card{background:#fff;border-radius:3px;box-shadow:0 8px 48px rgba(57,65,74,0.16);overflow:hidden}
+.card-intro{background:linear-gradient(135deg,#39414a 0%,#56636b 100%);padding:1.25rem 1.75rem;border-left:3px solid #a8a8a8}
+.card-intro p{font-size:12px;color:#eaeaea;line-height:1.85;letter-spacing:0.02em}
 .body{padding:1.75rem}
 .sec{margin-bottom:1.75rem}
-.tag{display:inline-block;font-size:9px;font-weight:600;letter-spacing:0.18em;color:#b8963e;border:1px solid #b8963e;padding:3px 10px;margin-bottom:1rem;text-transform:uppercase}
-.lbl{font-size:12px;font-weight:500;color:#1a2235;margin-bottom:6px;display:block;letter-spacing:0.04em}
+.tag{display:inline-block;font-size:9px;font-weight:600;letter-spacing:0.18em;color:#39414a;background:linear-gradient(135deg,#eaeaea,#d4d4d4);border:1px solid #a8a8a8;padding:3px 10px;margin-bottom:1rem;text-transform:uppercase}
+.lbl{font-size:12px;font-weight:500;color:#39414a;margin-bottom:6px;display:block;letter-spacing:0.04em}
 .hint{font-size:11px;color:#8a8f9a;margin-bottom:8px;display:block}
 .req{color:#c0392b;margin-left:2px}
-input[type=text],input[type=tel],input[type=email],input[type=date],textarea{width:100%;font-size:13px;font-family:"Montserrat",sans-serif;padding:10px 14px;border:1px solid #ddd;border-radius:2px;background:#fafafa;color:#1a2235;outline:none;transition:border 0.2s;resize:vertical}
-input:focus,textarea:focus{border-color:#b8963e;background:#fff}
+input[type=text],input[type=tel],input[type=email],input[type=date],textarea{width:100%;font-size:13px;font-family:"Montserrat",sans-serif;padding:10px 14px;border:1px solid #ddd;border-radius:2px;background:#fff;color:#39414a;outline:none;transition:border 0.2s;resize:vertical}
+input:focus,textarea:focus{border-color:#6d7c84;background:#fff}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.div{height:1px;background:linear-gradient(90deg,transparent,#d4c9b0,transparent);margin:1.75rem 0}
+.div{height:1px;background:linear-gradient(90deg,transparent,#a8a8a8,transparent);margin:1.75rem 0}
 .rg{display:flex;flex-direction:column;gap:6px}
 .rr{flex-direction:row;flex-wrap:wrap;gap:6px}
 .rr .ro{flex:1;min-width:120px}
 .ro{display:flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid #e0e0e0;border-radius:2px;cursor:pointer;transition:all 0.15s;background:#fafafa}
-.ro:hover{border-color:#d4af6a}
-.ro.sel{border-color:#b8963e;background:#fdf9f0}
-.ro input{accent-color:#b8963e;width:14px;height:14px;flex-shrink:0}
-.ro span{font-size:12px;color:#1a2235}
+.ro:hover{border-color:#a8a8a8}
+.ro.sel{border-color:#6d7c84;background:#eef0f1}
+.ro input{accent-color:#6d7c84;width:14px;height:14px;flex-shrink:0}
+.ro span{font-size:12px;color:#39414a}
 .cg{display:grid;grid-template-columns:1fr;gap:6px}
 .cg2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .co{display:flex;align-items:flex-start;gap:9px;padding:9px 12px;border:1px solid #e0e0e0;border-radius:2px;cursor:pointer;transition:all 0.15s;background:#fafafa}
-.co:hover{border-color:#d4af6a}
-.co.sel{border-color:#b8963e;background:#fdf9f0}
-.co input{accent-color:#b8963e;width:14px;height:14px;flex-shrink:0;margin-top:2px}
-.co span{font-size:11.5px;color:#1a2235;line-height:1.45}
+.co:hover{border-color:#a8a8a8}
+.co.sel{border-color:#6d7c84;background:#eef0f1}
+.co input{accent-color:#6d7c84;width:14px;height:14px;flex-shrink:0;margin-top:2px}
+.co span{font-size:11.5px;color:#39414a;line-height:1.45}
 .sw{display:flex;gap:6px;margin-top:2px}
 .sb{width:38px;height:38px;border:1px solid #ddd;border-radius:2px;background:#fafafa;font-size:13px;font-family:"Montserrat",sans-serif;cursor:pointer;color:#8a8f9a;transition:all 0.15s}
-.sb:hover{border-color:#b8963e;color:#b8963e}
-.sb.sel{background:#b8963e;border-color:#b8963e;color:#fff;font-weight:500}
+.sb:hover{border-color:#6d7c84;color:#6d7c84}
+.sb.sel{background:linear-gradient(135deg,#39414a,#6d7c84);border-color:#39414a;color:#fff;font-weight:500}
 .sl{display:flex;justify-content:space-between;margin-top:5px}
 .slb{font-size:10px;color:#8a8f9a}
 .cc{font-size:10px;color:#8a8f9a;text-align:right;margin-top:4px}
 .er{font-size:11px;color:#c0392b;margin-top:5px;display:none}
-.warn{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;margin:0.9rem 0;border-radius:2px}
-.warn p{font-size:11.5px;color:#6b5620;line-height:1.7}
-.warn p strong{color:#1a2235}
-.lgpd{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;border-radius:2px}
-.lgpd p{font-size:11.5px;color:#6b5620;line-height:1.7}
-.wbtn{display:block;width:100%;padding:15px;background:#25D366;border:none;border-radius:2px;color:#fff;font-size:13px;font-weight:600;font-family:"Montserrat",sans-serif;letter-spacing:0.1em;cursor:pointer;text-align:center;text-decoration:none;text-transform:uppercase;transition:opacity 0.15s}
+.warn{background:#f2f3f4;border-left:3px solid #6d7c84;padding:0.8rem 1rem;margin:0.9rem 0;border-radius:2px}
+.warn p{font-size:11.5px;color:#39414a;line-height:1.7}
+.warn p strong{color:#39414a}
+.lgpd{background:#f2f3f4;border-left:3px solid #6d7c84;padding:0.8rem 1rem;border-radius:2px}
+.lgpd p{font-size:11.5px;color:#39414a;line-height:1.7}
+.wbtn{display:block;width:100%;padding:15px;background:linear-gradient(135deg,#39414a 0%,#6d7c84 100%);border:none;border-radius:2px;color:#fff;font-size:13px;font-weight:600;font-family:"Montserrat",sans-serif;letter-spacing:0.1em;cursor:pointer;text-align:center;text-decoration:none;text-transform:uppercase;transition:opacity 0.15s}
 .wbtn:hover{opacity:0.9}
 .hl{font-size:11px;color:#8a8f9a;text-align:center;margin-top:10px;line-height:1.7}
-.foot{text-align:center;padding:1.25rem;border-top:1px solid #eee;background:#fafafa}
+.foot{text-align:center;padding:1.25rem;border-top:1px solid #eaeaea;background:#fffaf5}
 .foot p{font-size:10px;color:#8a8f9a;letter-spacing:0.06em;line-height:1.8}
-@media(max-width:480px){.g2{grid-template-columns:1fr}.cg2{grid-template-columns:1fr}.rr .ro{min-width:100%}.logo-name{font-size:22px}}
+@media(max-width:480px){.g2{grid-template-columns:1fr}.cg2{grid-template-columns:1fr}.rr .ro{min-width:100%}.hero-logo{width:240px}}
 </style>
 </head>
 <body>
 
 <div class="hero">
-  <svg class="hero-symbol" width="110" height="110" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="60,10 105,82 15,82" fill="none" stroke="white" stroke-width="9" stroke-linejoin="miter"/>
-    <polygon points="60,110 15,38 105,38" fill="none" stroke="white" stroke-width="9" stroke-linejoin="miter"/>
-    <circle cx="60" cy="38" r="3.5" fill="white"/>
-    <circle cx="60" cy="38" r="1.5" fill="#1a2235"/>
-    <rect x="36" y="44" width="48" height="3" rx="1.5" fill="white"/>
-    <rect x="58" y="47" width="4" height="5" fill="white"/>
-    <ellipse cx="60" cy="54" rx="5" ry="2.5" fill="white"/>
-    <rect x="58.5" y="54" width="3" height="18" fill="white"/>
-    <ellipse cx="60" cy="73" rx="6" ry="2.5" fill="white"/>
-    <rect x="57" y="73" width="6" height="3" fill="white"/>
-    <ellipse cx="60" cy="78" rx="9" ry="3" fill="white"/>
-    <rect x="56" y="78" width="8" height="3" fill="white"/>
-    <rect x="53" y="81" width="14" height="3" rx="1" fill="white"/>
-    <line x1="40" y1="47" x2="38" y2="62" stroke="white" stroke-width="1.8"/>
-    <path d="M30,62 Q38,68 46,62" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <line x1="80" y1="47" x2="82" y2="62" stroke="white" stroke-width="1.8"/>
-    <path d="M74,62 Q82,68 90,62" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  </svg>
-  <div class="logo-name">FILIPE FERREIRA</div>
-  <div class="gold-line"></div>
-  <div class="logo-sub">ADVOGADO &amp; ASSOCIADOS</div>
-  <div class="logo-oab">OAB/ES 37.159 &nbsp;&middot;&nbsp; DIREITO DO TRABALHO</div>
+  <img class="hero-logo" src="logo-branco.png" alt="Filipe Ferreira Advogado &amp; Associados, OAB/ES 37.159">
+  <div class="logo-area">DIREITO DO TRABALHO</div>
 </div>
 
 <div class="wrap">
