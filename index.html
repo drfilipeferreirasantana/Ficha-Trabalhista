@@ -87,6 +87,14 @@ input:focus,textarea:focus{border-color:#6d7c84;background:#fff}
           <div><label class="lbl">E-mail</label><input type="email" id="email" placeholder="seu@email.com"></div>
           <div><label class="lbl">Cidade / Estado</label><input type="text" id="cidade" placeholder="Ex: Colatina/ES"></div>
         </div>
+        <label class="lbl">Como conheceu o escritório?</label>
+        <div class="rg rr">
+          <label class="ro"><input type="radio" name="origem" value="Google"><span>Google</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Instagram"><span>Instagram</span></label>
+          <label class="ro"><input type="radio" name="origem" value="YouTube"><span>YouTube</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Indicação"><span>Indicação</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Outro"><span>Outro</span></label>
+        </div>
       </div>
 
       <div class="div"></div>
@@ -397,6 +405,7 @@ function enviar(){
     "WhatsApp: "+tel,
     "E-mail: "+gV("email"),
     "Cidade/UF: "+gV("cidade"),
+    "Como conheceu: "+gR("origem"),
     "",
     "*TRABALHO JURÍDICO DESEJADO*",
     gR("peca"),
